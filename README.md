@@ -1,2 +1,36 @@
 # Lab-Program-15
  EXERCISE TO VISUALIZE THE DATA USING LINE PLOT,BOX PLOT AND HISTOGRAM
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+np.random.seed(0)
+x = np.arange(0, 10, 0.1)
+y = np.sin(x) + np.random.normal(0, 0.1, len(x))
+data_box = np.random.normal(0, 1, 100)
+data_hist = np.random.randn(1000)
+
+plt.figure(figsize=(15, 5))
+
+# line plot
+plt.subplot(1, 3, 1)
+plt.plot(x, y, 'b', label='Sin with Noise')
+plt.title("Line Plot")
+plt.xlabel("Time")
+plt.ylabel("Amplitude")
+plt.grid(True)
+
+# box plot
+plt.subplot(1, 3, 2)
+sns.boxplot(data=data_box, color='green')
+plt.title("Box Plot")
+
+# histogram
+plt.subplot(1, 3, 3)
+plt.hist(data_hist, bins=30, color='purple', edgecolor='black', alpha=0.7)
+plt.title("Histogram")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+
+plt.tight_layout()
+plt.show()
