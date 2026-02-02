@@ -34,3 +34,12 @@ plt.ylabel("Frequency")
 
 plt.tight_layout()
 plt.show()
+
+
+
+
+Output:
+
+<img width="362" height="579" alt="Screenshot 2026-02-02 132532" src="https://github.com/user-attachments/assets/ed3c405d-d733-4d59-a74d-53a84a50e3f8" />
+
+<img width="300" height="257" alt="Screenshot 2026-02-02 132657" src="https://github.com/user-attachments/assets/34506d1a-a945-48ce-b464-5b2e0eaf0bc8" />
